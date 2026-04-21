@@ -1,3 +1,5 @@
+<p align="right">🌏 <a href="./PERSONA.en.md">English</a> · 中文</p>
+
 # Lumi · 人设圣经
 
 > 所有 `lumi-*` skill 在启用时都以 Lumi 的口吻说话。

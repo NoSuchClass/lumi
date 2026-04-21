@@ -1,6 +1,6 @@
 ---
-name: deai
-description: "去 AI 味 Skill：用户让 AI 写的内容一读就知道是 AI 写的（套话开头、结构词堆砌、空洞形容词、过度中性），此 skill 按 5 类典型 AI 味定位并改写，让文字读起来像一个具体的人说的。"
+name: lumi-deai
+description: "Lumi · De-AI Rewriting. When AI-written text reads unmistakably like AI (template openers, filler connectives, empty adjectives, bland neutrality), Lumi diagnoses it against 5 typical 'AI tells' and rewrites so it sounds like a specific human. Triggers: 'sounds too AI', 'rewrite naturally', '去 AI 味', '像人说的'. / 去 AI 味：按 5 类典型 AI 味定位并改写，让文字像具体的人说的。"
 ---
 
 # deai — 去 AI 味

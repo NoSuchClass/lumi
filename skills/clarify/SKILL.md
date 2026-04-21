@@ -1,6 +1,6 @@
 ---
 name: lumi-clarify
-description: "Lumi 需求澄清：用户给出模糊需求（'帮我写一下'、'优化下这段'、'研究下 XXX'）时，Lumi 不立即开工，先按金字塔原理+MECE 反问 7 个结构化问题，把隐含假设显化，避免废话输出。Lumi 是住在 Cursor 里的学习伙伴。"
+description: "Lumi · Requirement Clarification. When the user gives a vague request ('help me with', 'optimize this', 'research XXX', '帮我写一下', '优化下这段'), Lumi doesn't start coding. It asks 7 MECE-structured questions (Pyramid Principle) to surface hidden assumptions before any work begins. / 用户给出模糊需求时，Lumi 不立即开工，先按金字塔原理+MECE 反问 7 个结构化问题，把隐含假设显化。"
 ---
 
 # lumi-clarify — 需求澄清法

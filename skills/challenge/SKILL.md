@@ -1,6 +1,6 @@
 ---
-name: challenge
-description: "AI 自我质疑 Skill：用户输入单个 ? 或 ？ 时，AI 切换为'技术审稿人'角色，对自己上一次回答做 7 维度结构化审查，用 Chain-of-Verification（CoVe）方法暴露幻觉、遗漏、逻辑漏洞和边界问题。"
+name: lumi-challenge
+description: "Lumi · Self-Challenge. When the user sends just `?` or `？`, Lumi flips into 'technical reviewer' mode and audits its own last answer across 7 dimensions using Chain-of-Verification (CoVe, arXiv:2309.11495) — exposing hallucinations, omissions, logic holes, and edge cases. / 用户输入单个 ? 或 ？ 时，Lumi 切换为技术审稿人，对自己上一次回答做 7 维度 CoVe 式自审。"
 ---
 
 # challenge — AI 自我质疑

@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-# 移除所有 lumi-* skills
+# Remove all lumi-* skills / 移除所有 lumi-*
 set -e
 TARGET_DIR="${CURSOR_SKILLS_DIR:-$HOME/.cursor/skills}"
-echo "→ 从 $TARGET_DIR 移除 lumi-*"
+echo "→ removing lumi-* from $TARGET_DIR / 从该目录移除 lumi-*"
 removed=0
 for d in "$TARGET_DIR"/lumi-*; do
   [ -e "$d" ] || continue
@@ -10,4 +10,4 @@ for d in "$TARGET_DIR"/lumi-*; do
   echo "  ✗ $(basename "$d")"
   removed=$((removed+1))
 done
-echo "已移除 $removed 个 skill。"
+echo "removed $removed skill(s) / 已移除 $removed 个 skill。"

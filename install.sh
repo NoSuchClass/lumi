@@ -1,10 +1,11 @@
 #!/usr/bin/env bash
-# lumi skill installer
-# Usage:
-#   bash install.sh                  # 安装全部已产出的 skills
-#   bash install.sh clarify journal  # 只装指定 skills
-#   bash install.sh --link           # 软链接模式（开发用，改动立即生效）
-#   bash install.sh --dry-run        # 只打印不执行
+# lumi skill installer / 安装器
+#
+# Usage / 用法:
+#   bash install.sh                  # install all built skills / 安装全部已产出的 skills
+#   bash install.sh clarify journal  # install specific skills / 只装指定 skills
+#   bash install.sh --link           # symlink mode for dev / 软链接模式（改动立即生效）
+#   bash install.sh --dry-run        # print only, don't execute / 只打印不执行
 
 set -e
 
@@ -30,15 +31,15 @@ if [ ${#SKILLS[@]} -eq 0 ]; then
 fi
 
 if [ ${#SKILLS[@]} -eq 0 ]; then
-  echo "skills/ is empty — 还没有 skill 可以安装"
+  echo "skills/ is empty — no skill to install / 还没有 skill 可以安装"
   exit 0
 fi
 
 mkdir -p "$TARGET_DIR"
 
-echo "→ 安装目录：$TARGET_DIR"
-echo "→ 模式：$MODE"
-echo "→ 将安装：${SKILLS[*]}"
+echo "→ target / 安装目录：$TARGET_DIR"
+echo "→ mode   / 模式：$MODE"
+echo "→ skills / 将安装：${SKILLS[*]}"
 echo
 
 for skill in "${SKILLS[@]}"; do
@@ -46,7 +47,7 @@ for skill in "${SKILLS[@]}"; do
   dst="$TARGET_DIR/lumi-$skill"
 
   if [ ! -d "$src" ]; then
-    echo "  ⚠ 跳过 $skill（不存在于 skills/）"
+    echo "  ⚠ skipped $skill (not found in skills/) / 跳过（不存在于 skills/）"
     continue
   fi
 
@@ -66,4 +67,5 @@ for skill in "${SKILLS[@]}"; do
 done
 
 echo
+echo "Done. Restart Cursor or start a new chat to activate skills."
 echo "完成。重启 Cursor 或新建对话以激活 skills。"
