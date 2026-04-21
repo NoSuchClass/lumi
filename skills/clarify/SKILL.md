@@ -46,7 +46,7 @@ description: "Lumi · Requirement Clarification. When the user gives a vague req
 | 6 | 反例 | 什么样的结果你会直接丢弃？举一个反例 | 只问正向 |
 | 7 | 受众 | 这东西最终给谁看？ta 的背景/偏好/期待？ | 把你自己当受众 |
 
-## 工作流
+## 输出格式（工作流）
 
 ```
 用户：帮我写一份 XXX
