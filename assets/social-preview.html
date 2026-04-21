@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><title>Lumi · Social Preview</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1280px; height: 640px; overflow: hidden; }
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background:
+      radial-gradient(ellipse 100% 80% at 15% 15%, rgba(244, 165, 96, 0.55) 0%, transparent 55%),
+      radial-gradient(ellipse 80% 70% at 100% 100%, rgba(232, 130, 110, 0.40) 0%, transparent 60%),
+      radial-gradient(ellipse 60% 50% at 50% 50%, rgba(200, 214, 168, 0.22) 0%, transparent 65%),
+      linear-gradient(135deg, #fef6e9 0%, #f8e5c8 50%, #f0c895 100%);
+    color: #3d2817;
+    position: relative;
+  }
+  .card {
+    width: 1280px; height: 640px;
+    display: flex; align-items: center;
+    padding: 0 80px;
+    position: relative;
+  }
+  .grid {
+    position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(107, 68, 35, 0.07) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(107, 68, 35, 0.07) 1px, transparent 1px);
+    background-size: 48px 48px;
+    mask-image: radial-gradient(ellipse 100% 100% at 50% 50%, black 40%, transparent 85%);
+    pointer-events: none;
+  }
+  .mascot-wrap {
+    flex: 0 0 auto;
+    width: 440px; height: 440px;
+    position: relative;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .mascot-wrap::before {
+    content: '';
+    position: absolute; inset: 40px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.7) 0%, rgba(244, 199, 168, 0.4) 45%, transparent 75%);
+    filter: blur(4px);
+  }
+  .mascot-wrap img {
+    width: 100%; height: 100%;
+    position: relative; z-index: 2;
+    filter: drop-shadow(0 20px 40px rgba(107, 68, 35, 0.25));
+  }
+  .text-wrap {
+    flex: 1; padding-left: 40px;
+    display: flex; flex-direction: column;
+    justify-content: center;
+  }
+  .brand-big {
+    font-size: 128px; font-weight: 900;
+    letter-spacing: -4px; line-height: 1;
+    color: #3d2817;
+    margin-bottom: 8px;
+  }
+  .brand-big .dot {
+    color: #e06767;
+    display: inline-block;
+    margin: 0 -4px;
+  }
+  .tag {
+    display: inline-block;
+    padding: 6px 16px;
+    background: rgba(212, 149, 43, 0.14);
+    border: 1.5px solid rgba(212, 149, 43, 0.5);
+    border-radius: 999px;
+    font-family: "JetBrains Mono", "SF Mono", monospace;
+    font-size: 18px; font-weight: 600;
+    color: #8b5a1a;
+    letter-spacing: 1px;
+    margin-bottom: 22px;
+    width: fit-content;
+  }
+  .slogan {
+    font-size: 34px; font-weight: 700;
+    color: #5a3e26;
+    line-height: 1.35;
+    margin-bottom: 16px;
+  }
+  .slogan .hl {
+    background: linear-gradient(120deg, #d4952b 0%, #e06767 60%, #b8527e 100%);
+    -webkit-background-clip: text; background-clip: text;
+    color: transparent;
+  }
+  .sub {
+    font-size: 22px;
+    color: #8b6f47;
+    line-height: 1.5;
+    margin-bottom: 28px;
+  }
+  .url {
+    display: inline-flex; align-items: center; gap: 10px;
+    font-family: "JetBrains Mono", "SF Mono", monospace;
+    font-size: 20px; font-weight: 600;
+    color: #6b4423;
+    padding: 10px 18px;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1.5px solid rgba(107, 68, 35, 0.2);
+    border-radius: 10px;
+    width: fit-content;
+  }
+  .url .sl { color: #e06767; }
+  .corner-tl, .corner-br {
+    position: absolute; width: 32px; height: 32px;
+    opacity: 0.5;
+  }
+  .corner-tl { top: 32px; left: 32px; border-top: 2px solid #d4952b; border-left: 2px solid #d4952b; }
+  .corner-br { bottom: 32px; right: 32px; border-bottom: 2px solid #e06767; border-right: 2px solid #e06767; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="grid"></div>
+  <div class="corner-tl"></div><div class="corner-br"></div>
+
+  <div class="mascot-wrap">
+    <img src="mascot/mascot.png" alt="Lumi mascot">
+  </div>
+
+  <div class="text-wrap">
+    <div class="tag">🌱 learn-os · AI 学习操作系统</div>
+    <div class="brand-big">lu<span class="dot">·</span>mi</div>
+    <div class="slogan">一只会陪你<span class="hl">成长的小团子</span><br>住在你的 Cursor 里</div>
+    <div class="sub">35 个 Cursor Skill 拼成完整闭环<br>从「学什么」到「讲清楚」再到「考出来」</div>
+    <div class="url">github.com/NoSuchClass/<span class="sl">lumi</span></div>
+  </div>
+</div>
+</body></html>
